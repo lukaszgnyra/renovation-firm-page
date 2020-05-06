@@ -53,16 +53,15 @@
 .mainheader {
     display: flex;
     height: 80vh;
-    background-color: red;
 
 
     justify-content: center;
     flex-wrap: wrap;
-    background-image: url("/img/background\ header.jpg");
+    background-image: url("/img/background-header.jpg");
     background-position: center;
     background-size: cover;
     flex-direction: column;
-    
+
     min-height: 380px;
 }
 
@@ -116,50 +115,55 @@
     border-bottom: 1px solid #f0f0f0;
 }
 
-.about-company-title{
+.about-company-title {
     font-size: 30px;
     text-align: center;
     padding: 30px;
-    
+
 }
 
-.about-company p{
+.about-company p {
     padding: 0 10%;
     text-align: center;
     min-width: 200px;
 }
+
 /* profity */
-    .advantages{
-        background-color: #0D1749;
-        color: white;
-        align-items: center;
-        display: flex;
-        justify-content: space-around;
-    }
-    .advantage-item{
-        
-    
-       padding: 100px 0; 
-        display: flex;
-        flex-wrap: wrap;
-        
-    }
-    
-    .advantage-item .fas{
-        font-size: 45px;
-    }
-    .advantage-item .item-text{
-        font-size: 13px;
-        font-weight: 100;
-        margin-left: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        
-    }
-    .advantage-item .item-text div:first-child{
-        font-size: 20px;
-    }
+.advantages {
+    background-color: #0D1749;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.advantage-item {
+
+
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.advantage-item .fas {
+    font-size: 45px;
+}
+
+.advantage-item .item-text {
+    font-size: 13px;
+    font-weight: 100;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.advantage-item .item-text div:first-child {
+    font-size: 20px;
+}
+
 /* oferta */
 .offer {
     margin: 0 auto;
@@ -169,13 +173,15 @@
     flex-wrap: wrap;
     background-color: #fff;
 }
-.section-title{
+
+.section-title {
     flex: 100%;
     text-align: center;
     font-size: 30px;
-    padding:  0 0 30px 0;
+    padding: 0 0 30px 0;
 
 }
+
 .offer-item {
     padding: 30px;
     flex: 20%;
@@ -310,30 +316,31 @@ footer {
 
 
 
-@media (max-width:1000px){
+@media (max-width:1000px) {
     .offer-item {
         flex: 30%;
-    
+
     }
 }
 
-@media (max-width:527px){
-    .offer{
+@media (max-width:527px) {
+    .offer {
         width: 100%;
     }
+
     .offer-item {
         flex: 50%;
-       
+
         padding-left: 10px;
         padding-right: 10px;
-        
-    
+
+
     }
-    .advantage-item{
-        
+
+    .advantage-item {
+
         flex: 50%;
-     
-        
+
+
     }
 }
-
