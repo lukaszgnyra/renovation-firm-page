@@ -21,3 +21,21 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
 }
+
+
+
+
+// manu
+
+
+function handleMenu() {
+    document.querySelector(".mainnav").classList.toggle("active");
+    // document.querySelector(".menu-trigger").classList.add("unvisible");
+}
+
+function closeMenu() {
+    document.querySelector(".mainnav").classList.remove("active");
+    // document.querySelector(".menu-trigger").classList.remove("unvisible");
+
+}
+// document.addEventListener("click", closeMenu);

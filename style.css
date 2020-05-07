@@ -18,17 +18,18 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    font-family: "Varela Round", sans-serif;
 }
 
 /* nawigacja */
 .mainnav {
-    max-width: 1200px;
+
     width: 100%;
-    height: 80px;
+    height: 60px;
     margin: 0 auto;
     position: absolute;
     top: 0;
-
+    background-color: rgba(150, 150, 150, .1);
 
 
 
@@ -36,19 +37,22 @@
 
 .mainnav a {
     text-decoration: none;
-    height: 80px;
+    height: 60px;
     color: black;
 
 
-    padding: 10px 30px;
+
     font-size: 20px;
     line-height: 60px;
+    margin: 0 20px;
 }
 
 .mainnav a:hover {
     border-bottom: 2px solid;
 }
-
+.menu-trigger{
+    display: none;
+}
 /* mainheader */
 .mainheader {
     display: flex;
@@ -57,25 +61,42 @@
 
     justify-content: center;
     flex-wrap: wrap;
+
+
+
+    flex-direction: column;
+    position: relative;
+    min-height: 380px;
+
+}
+
+.mainheader::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(100, 100, 100, 0.1);
     background-image: url("./img/background-header.jpg");
     background-position: center;
+    opacity: 0.85;
     background-size: cover;
-    flex-direction: column;
-
-    min-height: 380px;
 }
 
 .company-title {
-    font-size: 40px;
+    font-size: 60px;
     margin-left: 10vw;
-
+    position: relative;
 
 
 }
 
 .company-title-desc {
     font-size: 20px;
-    margin-left: 10vw;
+    margin-left: 15vw;
+    position: relative;
+    margin-bottom: 20px;
 
 }
 
@@ -87,6 +108,7 @@
     background-color: #0D1749;
     color: #F0F0F0;
     margin-left: 30vw;
+    position: relative;
 }
 
 
@@ -132,32 +154,42 @@
 .advantages {
     background-color: #0D1749;
     color: white;
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-}
-
-.advantage-item {
-
-
-    padding: 100px 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    padding: 100px 0 ;
+
 
 }
+
+
+.advantage-item {
+   
+    display: flex;
+    flex: 25%;
+    justify-content: center;
+  
+    
+    
+
+}
+
 
 .advantage-item .fas {
     font-size: 45px;
+    display: block;
+    width: 50px;
+    
+    
+    
+    
 }
 
 .advantage-item .item-text {
     font-size: 13px;
     font-weight: 100;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
+    width: 105px;
 }
 
 .advantage-item .item-text div:first-child {
@@ -321,6 +353,66 @@ footer {
         flex: 30%;
 
     }
+
+    
+}
+@media (max-width:800px){
+    .advantage-item {
+        flex: 50%;
+    }
+    .advantage-item:first-of-type{
+        margin-bottom: 50px;
+    }
+    /* nawigacja */
+.mainnav {
+
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    background-color: rgba(150, 150, 150, .1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    z-index: 2;
+    left: 100%;
+    transition: .2s;
+
+}
+.menu-trigger{
+    display: block;
+    z-index: 3;
+    right: 10px;
+    position: absolute;
+    top: 10px;
+    font-size: 25px;
+}
+
+.mainnav a {
+    width: 100%;
+    float: left;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+
+
+
+    font-size: 20px;
+    
+    
+}
+
+.mainnav a:hover {
+    border-bottom: 2px solid;
+}
+.active{
+    left: 0;
+}
+.unvisible{
+    display: none;
+}
 }
 
 @media (max-width:527px) {
@@ -330,17 +422,34 @@ footer {
 
     .offer-item {
         flex: 50%;
+        max-width: 50%;
 
         padding-left: 10px;
         padding-right: 10px;
 
 
     }
-
-    .advantage-item {
-
-        flex: 50%;
-
-
+    .company-title {
+        font-size: 40px;
+        margin: 0 auto;
     }
+    
+    .company-title-desc {
+        font-size: 18px;
+        margin: 0 auto;
+        position: relative;
+        margin-bottom: 20px;
+    
+    }
+    .mainheader-button {
+        width: 150px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 1px solid;
+        background-color: #0D1749;
+        color: #F0F0F0;
+        margin: 0 auto;
+        position: relative;
+    }
+
 }
