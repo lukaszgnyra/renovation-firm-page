@@ -323,30 +323,94 @@
     }
 }
 
+.formular{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 0;
+}
+.form-container{
+    width: 60%;
 
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
 
+#name, #email, #message-title, #area{
+    margin: 10px 10px;
+    padding: 10px  10px;
+    border-radius: 3px;
+    border: 1px solid;
+}
+#name, #email{
+    flex: 40%;
+    
 
+}
+#message-title, #area{
+    flex: 100%;
+    
 
+}
 
+#area{
+    resize: none;
+    height: 200px;
+    /* width: 100px; */
+    margin-left: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
+.send{
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    font-size: 15px;
     background-color: #0D1749;
-    height: 10vh;
+    border: none;
+    color: white;
+}
+
+.formular-header, .formular-description{
+    font-size: 20px;
+    text-align: center;
+    margin: 0 10px;
+    
 }
 
 
+
+
+
+
+
+
+
+footer{
+    background-color: #0D1749;
+   color: white;
+   padding: 20px 0;
+    
+}
+.row{
+    width: 100%;
+    display: flex;
+   text-align: center;
+   background-color:#ccc;
+  
+}
+.column{
+    flex: 50%;
+    text-align: center;
+    
+}
+footer p{
+    text-align: center;
+}
 
 @media (max-width:1000px) {
     .offer-item {
