@@ -25,7 +25,7 @@ function showSlides(n) {
 
 
 
-// manu
+// menu
 
 
 function handleMenu() {
@@ -34,8 +34,8 @@ function handleMenu() {
 }
 
 function closeMenu() {
+  console.log("kupa");
     document.querySelector(".mainnav").classList.remove("active");
     // document.querySelector(".menu-trigger").classList.remove("unvisible");
 
 }
-// document.addEventListener("click", closeMenu);

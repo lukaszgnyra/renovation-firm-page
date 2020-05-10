@@ -14,14 +14,16 @@
 <body>
     <div class="page-container">
         <header class="mainheader">
-            <div onclick="handleMenu()" class="menu-trigger">
-                <i class="fas fa-bars"></i>
-            </div>
+            
             <nav class="mainnav">
-                <a href="#">O firmie</a>
-                <a href="#">Oferta</a>
-                <a href="#">Nasze realizacje</a>
-                <a href="#">Kontakt
+                <div onclick="handleMenu()" class="menu-trigger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <a href="#" onclick="closeMenu()">Start</a>
+                <a href="#about-company" onclick="closeMenu()">O firmie</a>
+                <a href="#offer" onclick="closeMenu()">Oferta</a>
+                <a href="#gallery" onclick="closeMenu()">Nasze realizacje</a>
+                <a href="#formular" onclick="closeMenu()">Kontakt
                 </a>
             </nav>
             
@@ -33,6 +35,7 @@
         </header>
         <div class="main-container">
             <div class="about-company">
+                <span id="about-company"></span>
 
                 <div class="about-company-title">O firmie</div>
                 <p>Jesteśmy firmą z 10 letnim doświadczeniem. Swoje usługi świadczymy na terenie Trójmiasta i okolic. W
@@ -73,6 +76,7 @@
                 
             </section>
             <section class="offer">
+                <span id="offer"></span>
                 <div class="section-title">Usługi:</div>
                 <div class="offer-item">
                     <i class="fas fa-home"></i>
@@ -118,6 +122,7 @@
         </div>
         <!-- slider -->
         <section class="gallery">
+            <span id="gallery"></span>
             <div class="section-title">Nasze realizacje: </div>
             <!-- Slideshow container -->
             <div class="slideshow-container">
@@ -182,7 +187,7 @@
             </div>
         </section>
             <section class="formular"> 
-                
+                <span id="formular"></span>
                 <div class="form-container"> 
                     <div class="formular-header">Masz pytanie?</div>
                 <div class="formular-description">W celu uzyskania wyceny 
@@ -193,7 +198,7 @@
                         <input id="email" type="text" placeholder="E-mail">
                         <input id="message-title" type="text" placeholder="Tytuł">
                         <textarea id="area" placeholder="Treść wiadomości"></textarea>
-                        <button class="send">
+                        <button class="send" type="button">
                             Wyślij
                         </button>
                     </form>
@@ -202,18 +207,18 @@
         <footer>
             <div class="row">
                 <div class="column">
-                    <p>Renovatex</p>
+                    <p><i class="fas fa-tools"></i> Renovatex</p>
                     <p>ul.Warszawska 69</p>
                     <p>80-180 Gdańsk</p>
                    
                 </div>
                 <div class="column">
-                    <p>NIP 55555555555</p>
-                   <p>Tel. 555-555-555 </p> 
+                    <p>NIP 7892356941</p>
+                   <p>Tel. 542-523-236 </p> 
                    <p>Adres e-mail: kontakt@renovatex.pl</p>
                 </div>
             </div>
-                    <p>
+                    <p id="designed">
                         Designed by lukaszgnyra
                     </p>
 

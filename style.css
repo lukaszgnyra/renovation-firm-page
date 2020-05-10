@@ -12,7 +12,9 @@
 
  granat
 #0D1749 */
-
+html {
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -52,6 +54,17 @@
 }
 .menu-trigger{
     display: none;
+}
+#about-company, #offer, #gallery, #formular{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.about-company, .offer, .gallery, .formular{
+    position: relative;
+}
+#gallery{
+    top: -25px;
 }
 /* mainheader */
 .mainheader {
@@ -232,7 +245,9 @@
 
 
 /* galeria */
-
+.gallery{
+    margin: 25px 0;
+}
 /* Slideshow container */
 .slideshow-container {
     max-width: 900px;
@@ -373,6 +388,7 @@ form{
     background-color: #0D1749;
     border: none;
     color: white;
+    
 }
 
 .formular-header, .formular-description{
@@ -393,14 +409,15 @@ form{
 footer{
     background-color: #0D1749;
    color: white;
-   padding: 20px 0;
+   padding: 40px 0;
+   font-size: 12px;
     
 }
 .row{
     width: 100%;
     display: flex;
    text-align: center;
-   background-color:#ccc;
+   
   
 }
 .column{
@@ -408,8 +425,10 @@ footer{
     text-align: center;
     
 }
-footer p{
+footer #designed{
+    margin-top: 15px;
     text-align: center;
+    font-size: 10px;
 }
 
 @media (max-width:1000px) {
@@ -449,9 +468,15 @@ footer p{
     display: block;
     z-index: 3;
     right: 10px;
-    position: absolute;
+    position: fixed;
     top: 10px;
     font-size: 25px;
+    background-color:#0D1749;
+    color: white;
+    line-height: 25px;
+    padding: 5px;
+    padding-bottom: 3px;
+    border-radius: 3px;
 }
 
 .mainnav a {
@@ -515,5 +540,11 @@ footer p{
         margin: 0 auto;
         position: relative;
     }
+    .form-container{
+        width: 100%;
 
+}
+.formular{
+    padding: 50px 0;
+}
 }
