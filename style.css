@@ -90,6 +90,7 @@ html {
     background-position: center;
     opacity: 0.85;
     background-size: cover;
+    min-height: 380px;
 }
 
 .company-title {
@@ -354,7 +355,7 @@ footer{
     background-color: #0D1749;
    color: white;
    padding: 40px 0;
-   font-size: 12px;
+   font-size: 15px;
     
 }
 .row{
@@ -500,5 +501,8 @@ footer #designed{
 }
 .advantages{
     padding: 60px 0;
+}
+footer{
+    font-size: 12px;
 }
 }
