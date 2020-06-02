@@ -1,17 +1,4 @@
-/* tło
-#F0F0F0
 
- jasny niebieski
-#C2CDFF
-
- niebieskawy
-#7D91F7
-
- niebieski
-#1E41F1
-
- granat
-#0D1749 */
 html {
     scroll-behavior: smooth;
     min-width: 320px;
@@ -24,7 +11,7 @@ html {
     font-family: "Varela Round", sans-serif;
 }
 
-/* nawigacja */
+/* navigation */
 .mainnav {
 
     width: 100%;
@@ -65,17 +52,11 @@ html {
 .mainheader {
     display: flex;
     height: 80vh;
-
-
     justify-content: center;
     flex-wrap: wrap;
-
-
-
     flex-direction: column;
     position: relative;
     min-height: 380px;
-
 }
 
 .mainheader::before {
@@ -97,8 +78,6 @@ html {
     font-size: 60px;
     margin-left: 10vw;
     position: relative;
-
-
 }
 
 .company-title-desc {
@@ -106,11 +85,9 @@ html {
     margin-left: 15vw;
     position: relative;
     margin-bottom: 20px;
-
 }
 
-.mainheader-button {
-   
+.mainheader-button { 
     width: 200px;
     padding: 10px 20px;
     border-radius: 5px;
@@ -137,7 +114,6 @@ html {
     font-size: 30px;
     text-align: center;
     padding: 30px;
-
 }
 
 .about-company p {
@@ -155,11 +131,8 @@ html {
     justify-content: space-around;
     align-content: center;
     padding: 100px 0 ;
-
-
 }
 .advantage-item {
-   
     display: flex;
     flex: 25%;
     justify-content: center;
@@ -209,7 +182,6 @@ html {
     width: 100%;
     margin-bottom: 20px;
 }
-
 
 /* galeria */
 .gallery{
@@ -317,19 +289,14 @@ form{
 }
 #name, #email{
     flex: 40%;
-    
-
 }
 #message-title, #area{
     flex: 100%;
-    
-
 }
 
 #area{
     resize: none;
     height: 200px;
-    /* width: 100px; */
     margin-left: 10px;
 }
 
@@ -340,8 +307,7 @@ form{
     font-size: 15px;
     background-color: #0D1749;
     border: none;
-    color: white;
-    
+    color: white;   
 }
 
 .formular-header, .formular-description{
@@ -355,8 +321,7 @@ footer{
     background-color: #0D1749;
    color: white;
    padding: 40px 0;
-   font-size: 15px;
-    
+   font-size: 15px;  
 }
 .row{
     width: 100%;
@@ -377,7 +342,6 @@ footer #designed{
 @media (max-width:1000px) {
     .offer-item {
         flex: 30%;
-
     }
 
     
@@ -391,10 +355,8 @@ footer #designed{
     }
     /* nawigacja */
 .mainnav {
-
     width: 100%;
     height: 100vh;
-    
     position: fixed;
     top: 0;
     background-color: rgba(150, 150, 150, .1);
@@ -405,7 +367,6 @@ footer #designed{
     z-index: 2;
     left: 100%;
     transition: .2s;
-
 }
 .menu-trigger{
     display: block;
@@ -429,11 +390,7 @@ footer #designed{
     color: black;
     text-align: center;
     margin: 0;
-
-
-    font-size: 20px;
-    
-    
+    font-size: 20px; 
 }
 
 .mainnav a:hover {
