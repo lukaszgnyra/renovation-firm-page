@@ -450,6 +450,9 @@ footer #designed{
         width: 100%;
 
 }
+.advantage-item .item-text div:first-child {
+    font-size: 14px;
+}
 .formular{
     padding: 50px 0;
 }
