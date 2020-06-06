@@ -73,6 +73,9 @@ html {
     background-size: cover;
     min-height: 380px;
 }
+button{
+    cursor: pointer;
+}
 
 .company-title {
     font-size: 60px;
